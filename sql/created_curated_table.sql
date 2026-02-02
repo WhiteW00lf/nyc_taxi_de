@@ -1,4 +1,4 @@
-create table `nyc_curated.fact_trips`
+create or replace table `nyc_curated.fact_trips`
 PARTITION BY DATE(tpep_pickup_datetime)
 CLUSTER BY PULocationID
 
